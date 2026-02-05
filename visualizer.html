@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script type="module" src="js/renderer.js"></script>
+</head>
+<body>
+    <div id="top-right">
+      <div id="matrixDim">
+        <span id="xAxis"></span>
+        <span id="showOn2D" class="X"></span>
+        <span id="yAxis"></span>
+        <span id="showOn3D" class="X"></span>
+        <span id="zAxis"></span>
+      </div>
+    </div>
+    <div id="top-left">
+      <div id="optionContainer">
+        <div>
+          <label for="highlight">Insert number to highlight:</label>
+        <input type="text" id="highlight" autocomplete="off">
+        </div>
+        
+        <div>
+        <label for="enableNumbers">Enable number textures:</label>
+        <input type="checkbox" id="enableNumbers">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
