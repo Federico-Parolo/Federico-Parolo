@@ -223,6 +223,7 @@ const generateTexture = (n,opaque) => {
         ctx.lineTo(0,canvas.height);
         ctx.lineTo(canvas.width,canvas.height);
         ctx.lineTo(canvas.width,0);
+        ctx.lineTo(0,0);
         ctx.stroke();
         
         const texture = new THREE.CanvasTexture(canvas);
@@ -305,7 +306,6 @@ const generateMeshes = (dims) => {
         }
         break;
     case 3: // 3d matrix
-        
         for (let x = 0; x < mat.length; ++x) {
             if (maxY < mat[x].length) maxY = mat[x].length;
             for (let y = 0; y < mat[x].length; ++y) {
